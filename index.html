@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Book Your Ticket</h1>
+        <div class="event-grid" id="eventGrid"></div>
+        
+        <div class="booking-form" id="bookingForm" style="display: none;">
+            <h2 id="selectedEvent"></h2>
+            <label>Your Name:</label>
+            <input type="text" id="userName" class="input-field">
+            <label>Your Email:</label>
+            <input type="email" id="userEmail" class="input-field">
+            <label>Number of Seats:</label>
+            <input type="number" id="seatCount" class="input-field" min="1" value="1">
+            <button id="confirmBooking" class="book-button">Confirm Booking</button>
+        </div>
+        
+        <div class="booking-status" id="bookingStatus"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

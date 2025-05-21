@@ -1,0 +1,76 @@
+/* styles.css */
+body {
+    background: url('movies.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Cursive;
+}
+
+.container {
+    padding: 20px;
+    display: grid;
+    gap: 16px;
+    text-align: center;
+    background: rgba(250, 250, 250, 0.8);
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.event-card {
+    padding: 16px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.event-card:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.booking-form {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+}
+
+.book-button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-button:hover {
+    background-color: #0056b3;
+}
+
+.booking-status {
+    padding: 16px;
+    background-color: #d4edda;
+    border-left: 4px solid #28a745;
+}
